@@ -41,6 +41,7 @@ int main()
 {
     int numbers[] = {23, 41, 25, 54, 18, 14};
     int len = sizeof(numbers) / sizeof(numbers[0]);
+    
     selection_sort(numbers, len);
     show_arr(numbers, len);
 }
