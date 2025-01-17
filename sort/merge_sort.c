@@ -37,7 +37,7 @@ void merge(int arr[], int low, int mid, int high)
         k++;
     }
 
-    while (j < high)
+    while (j <= high)
     {
         temp[k] = arr[j];
         j++;
@@ -56,13 +56,9 @@ void merge_sort(int arr[], int low, int high)
     {
         int mid = (low + high) / 2;
 
-        printf("merge da esquerda merge_sort(arr, %d, %d)\n", low, mid);
         merge_sort(arr, low, mid);
-
-        printf("merge da direita merge_sort(arr, %d, %d)\n", mid+1, high);
         merge_sort(arr, mid + 1, high);
 
-        printf("merge(arr, %d, %d, %d)\n", low, mid, high);
         merge(arr, low, mid, high);
     }
 }
