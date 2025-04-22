@@ -1,2 +1,2 @@
 # algorithms-and-data-structures
-Practicing
+For practicing and learning
